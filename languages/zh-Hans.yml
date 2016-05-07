@@ -55,3 +55,7 @@ state:
   pages: 页面
   tags: 标签
   categories: 分类
+
+only_coun:
+  site: 本站到访数
+  page: 本页阅读量

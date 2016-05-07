@@ -164,8 +164,8 @@
 	    transform: translate(-100%, 0 );
 	}
 	.header-nav{
+		float: left;
 		width: 100%;
-		position: absolute;
 		transition: transform .3s ease-in;
 		.social {
 			margin-right:15px;
@@ -264,20 +264,17 @@
 			}
 		}
 	}
-	.switch-part{
-		width: 100%;
-		position: absolute;
-	}
-	.switch-part1{
-		left: 0;
-	}
-	.switch-part2{
-		left: 100%;
-		top: 20px;
-		overlay-x: hidden;
-		overflow-y: auto;
-		max-height: 200px;
-	}
+    .switch-part{
+        width: 100%;
+        position: relative;;
+    }
+    .switch-part1{
+        left: 0;
+    }
+    .switch-part2{
+        overflow-y: auto;
+        font-size (12/16)rem
+    }
 	.switch-part3{
 		left: 200%;
 		line-height: 30px;

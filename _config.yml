@@ -27,6 +27,14 @@ mathjax: true
 # 是否开启动画效果
 animate: true
 
+# 不蒜子网站计数设置
+# http://ibruce.info/2015/04/04/busuanzi/
+
+only_coun:
+  on: true
+  site_visit: true
+  page_visit: true
+
 # 是否在新窗口打开链接
 open_in_new: false
 
@@ -43,7 +51,7 @@ share_addthis: false
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
 duoshuo: true
 #是否开启云标签
-tagcloud: true
+tagcloud: false
 
 #是否开启友情链接
 #不开启——
