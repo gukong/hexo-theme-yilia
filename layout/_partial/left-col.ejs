@@ -33,27 +33,30 @@
 				<section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud" style="position: relative">
                         <% var result = list_tags({
-                            show_count: false,
-                            style: 'list',
-                            separator: ',',
-                            is_menu: true
-                        }) 
+	                            show_count: false,
+	                            style: 'list',
+	                            separator: ',',
+	                            is_menu: true
+                        	}) 
                             if (result.match('</a>')) {
                                 result = '<p style="position: relative;float: left;width: 100%;"> 标签 </p>' + result;
                             }
+                            var tagclassReg = /tag-list-link/g;
+                            result = result.replace(tagclassReg,'color6');
                         %>
                         <%- result %>
                         </br>
                         <% var result = list_categories({
-                          show_count: false,
-                          class: 'article-category',
-                          separator: '',
-                          style: 'list',
-                          is_menu: true
-                        }) 
+								show_count: false,
+								separator: '',
+								style: 'list',
+								is_menu: true
+	                        }) 
                             if (result.match('</a>')) {
                                 result = '<p style="position: relative;float: left;width: 100%;"> 分类 </p>' + result;
                             }
+                            var cateclassReg = /category-list-link/g;
+                            result = result.replace(cateclassReg,'color6');
                         %>
                         <%- result %>
                     </div>
